@@ -1,6 +1,6 @@
 let theCodeText = '';
 function saveAndExit() {
-    localStorage.setItem("cardNumber", theCodeText);
+    localStorage.setItem("SBcardNumber", theCodeText);
     window.history.back();
 }
 
@@ -15,9 +15,7 @@ function myInput(){
 function outputText(inputText) {
     for (let i = 0; i < inputText.length; i++) {
         temp = inputText.charCodeAt(i);
-        if (!(temp > 47 && temp < 58) && // numeric (0-9)
-            !(temp > 64 && temp < 91) && // upper alpha (A-Z)
-            !(temp > 96 && temp < 123)) { // lower alpha (a-z)
+        if (inputText[i]===".") {
             inputText = inputText.replaceAt(i, "|");
         }
     }

@@ -38,16 +38,22 @@ html{
     overflow: hidden;
     user-select: none;
 }
-
-#app-title {
+#app-img-title {
+    height: 40px;
+    width: 320px;
+    margin-left: 20px;
+    animation: opacityFadeIn 0.5s ease-in;
+    margin-top: 15px;
+}
+#app-title-2 {
     color: #ffffff;
     margin: auto;
     width: fit-content;
-    font-size: 55px;
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 0px;
     text-align: center;
     font-family: 'Poppins', "test";
-    /*font-family: "ManropeBold";*/
     animation: opacityFadeIn 0.5s ease-in;
 }
 #landing-img {

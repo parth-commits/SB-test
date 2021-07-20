@@ -33,10 +33,10 @@ function myRemove(elem) {
 }
 
 // this needs to happen before the function call below
-if (!localStorage.getItem("cardNumber")) {
-    localStorage.setItem("cardNumber", "");
+if (!localStorage.getItem("SBcardNumber")) {
+    localStorage.setItem("SBcardNumber", "");
 } else {
-    cardNumber = localStorage.getItem('cardNumber');
+    cardNumber = localStorage.getItem('SBcardNumber');
     // if it isnt empty
     if (cardNumber !== '') {
         addQRCode();
